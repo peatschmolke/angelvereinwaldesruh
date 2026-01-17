@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Angelverein Senzig‑Waldesruh</title>
+  <style>
+    :root {
+      --green: #0a5c2f;
+      --light-green: #e8f5ee;
+      --dark: #1a1a1a;
+    }
+
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: Arial, sans-serif;
+      color: var(--dark);
+      line-height: 1.6;
+      background: white;
+      scroll-behavior: smooth;
+    }
+
+    header {
+      height: 70vh;
+      background: url('images/boote.webp') center/cover no-repeat;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      position: relative;
+    }
+
+    header::after {
+      content: "";
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background: rgba(0, 0, 0, 0.45);
+    }
+
+    header h1 {
+      position: relative;
+      color: white;
+      font-size: 3rem;
+      padding: 20px 40px;
+      border-radius: 12px;
+      backdrop-filter: blur(6px);
+    }
+
+    nav {
+      background: white;
+      padding: 15px;
+      text-align: center;
+      box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+      position: sticky;
+      top: 0;
+      z-index: 1000;
+    }
+
+    nav a {
+      margin: 0 15px;
+      text-decoration: none;
+      color: var(--green);
+      font-weight: bold;
+      font-size: 1.1rem;
+    }
+
+    nav a:hover {
+      text-decoration: underline;
+    }
+
+    section {
+      padding: 60px 20px;
+      max-width: 900px;
+      margin: auto;
+    }
+
+    section:nth-of-type(odd) {
+      background: var(--light-green);
+    }
+	
+	#mitgliedschaft ul {
+		padding-left: 40px;
+		list-style-type: disc;
+	}
+
+
+	#mitgliedschaft li {
+		margin-bottom: 8px;
+	}
+
+    h2 {
+      font-size: 2.2rem;
+      color: var(--green);
+      margin-bottom: 20px;
+    }
+
+    .grid-gallery {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 15px;
+      margin-top: 20px;
+    }
+
+    .grid-gallery img {
+      width: 100%;
+      border-radius: 10px;
+      object-fit: cover;
+    }
+	
+	.mapsgoogle{
+		width: 50%;
+		height: 100%;
+	}
+
+    footer {
+      background: var(--green);
+      color: white;
+      padding: 30px 20px;
+      text-align: center;
+    }
+
+    footer a {
+      color: #c9ffd5;
+      text-decoration: none;
+    }
+
+    footer a:hover {
+      text-decoration: underline;
+    }
+  </style>
+</head>
+<body>
+
+<nav>
+  <a href="#verein">Der Verein</a>
+  <a href="#mitgliedschaft">Mitgliedschaft</a>
+ <!-- <a href="#see">Der See</a>-->
+  
+  <a href="#galerie">Galerie</a>
+  <a href="#kontakt">Kontakt</a>
+</nav>
+
+<header>
+  <h1>Angelverein Senzig‑Waldesruh</h1>
+</header>
+
+<section id="verein">
+  <h2>Der Verein</h2>
+  <p>Der Angelverein liegt am ruhig gelegenen Zeesener See in Senzig‑Waldesruh, einem Ortsteil von Königs Wusterhausen.</p>
+  <p>Seit 1964 pflegen unsere Mitglieder das Gelände, fördern die Fischbestände und organisieren gemeinschaftliche Aktivitäten rund ums Angeln.</p>
+</section>
+<!--
+<section id="see">
+  <h2>Der Zeesener See</h2>
+  <p>Ein naturbelassener See, verbunden über den Fanggraben mit der Dahme und dem Todnitzsee. Zahlreiche Fischarten wie Barsch, Hecht, Zander, Karpfen, Wels und viele mehr sind hier heimisch.</p>
+  <p>Motor- und Segelboote sind nicht erlaubt, um Natur und Ruhe zu schützen.</p>
+</section>
+-->
+<section id="mitgliedschaft">
+<h2>Mitgliedschaft</h2>
+<p>Ob Angler/Anglerin, Anfänger/Anfängerin, jung oder alt – hier im Angelverein ist jeder herzlich willkommen.</p>
+
+
+<h3>Kontakt</h3>
+<p>Bei Fragen oder Interesse unter "Kontakt" oben rechts einfach eine Nachricht an uns senden oder bei einer Versammlung oder Veranstaltung persönlich vorbei kommen.</p>
+
+
+<h3>Aufnahmegebühr</h3>
+<p>Die Aufnahmegebühr beträgt einmalig <strong>100,00 €</strong>, davon ausgenommen sind Kinder bis zum vollendeten 14. Lebensjahr.</p>
+
+
+<h3>Jahresbeitrag</h3>
+<ul>
+<li>Ohne Kahnstand: 105,00 €</li>
+<li>Mit Kahnstand: 125,00 €</li>
+<li>Kinder bis max. 14 Jahre: 60,00 €</li>
+</ul>
+
+
+<h3>Zubuchungsoptionen</h3>
+<ul>
+<li>Jahresangelkarten Zeesener See Friedfisch: 51,00 €</li>
+<li>Jahresangelkarten Zeesener See Raubfisch: 65,00 €</li>
+<li>Nachtangelerlaubnis Zeesener See: 22,00 €</li>
+<li>DAFV-Jahresangelberechtigung: 25,00 €</li>
+</ul>
+</section>
+<section id="galerie">
+  <h2>Galerie</h2>
+  <div class="grid-gallery">
+    <img src="images/see.avif" alt="See" />
+    <img src="images/winter.avif" alt="Winter" />
+    <img src="images/angelverein.avif" alt="Anglerhaus" />
+  </div>
+</section>
+
+<section id="kontakt">
+
+  <h2>Kontakt</h2>
+<!--<iframe class="mapsgoogle" src="https://www.google.com/maps/embed/v1/place?key=AIzaSyD2mMwmV72ZEVEiaQOLpm6xfu42IhXffek&amp;q=Wiesendamm%2051%2C%2015712%20K%C3%B6nigs%20Wusterhausen%2C%20Deutschland&amp;zoom=15" frameborder="0" allowfullscreen="" title="Google maps"></iframe>-->
+  <p>Für Fragen zur Mitgliedschaft oder allgemeinen Anliegen erreicht ihr uns hier:</p>
+  <p><strong>Email:</strong> <a href="mailto:angelverein-senzig-waldesruh@web.de">angelverein-senzig-waldesruh@web.de</a></p>
+  <p><strong>Adresse:</strong> 
+	<p>Angelverein OG Senzig-Waldesruh des DAV e.V.</p>
+	<p>Wiesendamm 51</p>
+	<p>15712 Königs Wusterhausen</p>
+	<p>OT Senzig</p>
+ </p>
+</section>
+
+<footer>
+  <p>&copy; 2025 Angelverein Senzig‑Waldesruh</p>
+  <p><a href="impressum.html">Impressum</a> | <a href="datenschutz.html">Datenschutz</a></p>
+</footer>
+
+</body>
+</html>
